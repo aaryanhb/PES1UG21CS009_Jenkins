@@ -36,7 +36,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    // Add your deployment steps here
+                    echo 'Deploy'
                 }
             }
             post {
