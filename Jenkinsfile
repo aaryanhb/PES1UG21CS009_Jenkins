@@ -4,13 +4,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                script {
-                    // Build PES1UG21CS009-1 project
-                    sh 'mvn clean install' 
+                // Build PES1UG21CS009-1 project
+                sh 'mvn clean install' 
 
-                    // Compile hello.cpp file
-                    sh 'g++ -o hello hello.cpp'
-                }
+                // Compile hello.cpp file
+                sh 'g++ -o hello hello.cpp'
             }
             post {
                 always {
